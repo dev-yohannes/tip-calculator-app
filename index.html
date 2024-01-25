@@ -21,7 +21,58 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
+    <div class="element-wrapper">
+      <div class="text">
+        <p>SPLI</p>
+        <p>TTER</p>
+      </div>
+      <div class="container">
+        <div class="left">
+          <p>Bill</p>
+          <input
+            type="number"
+            name="bill"
+            id="bill-value-input"
+            placeholder="$0"
+          />
+          <p>Select Tip %</p>
+          <div class="boxes">
+            <button class="box box1" value="0.05">5%</button>
+            <button class="box box2" value="0.1">10%</button>
+            <button class="box box3" value="0.15">15%</button>
+            <button class="box box4" value="0.25">25%</button>
+            <button class="box box5" value="0.5">50%</button>
+            <button class="box box6" value="6">Custom</button>
+          </div>
+          <p>Number of People</p>
+          <input type="number" name="people-num" id="people-num" />
+        </div>
+        <!-- <button class="calculate-btn">Calculate</button> -->
+        <div class="right">
+          <div class="tip-amount">
+            <div>
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <div>
+              <span class="tip-amount-value">0.00</span>
+            </div>
+          </div>
+          <div class="total-amount">
+            <div>
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <div>
+              <span class="total-amount-value">0.00</span>
+            </div>
+          </div>
+          <button class="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
     <!--  -->
     <script src="script.js"></script>
+    <!--  -->
   </body>
 </html>
