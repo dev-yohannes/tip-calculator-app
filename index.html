@@ -32,8 +32,9 @@
           <input
             type="number"
             name="bill"
+            class="bill-value-input"
             id="bill-value-input"
-            placeholder="$0"
+            placeholder="0"
           />
           <p>Select Tip %</p>
           <div class="boxes">
@@ -45,9 +46,16 @@
             <button class="box box6" value="6">Custom</button>
           </div>
           <p>Number of People</p>
-          <input type="number" name="people-num" id="people-num" />
+          <input
+            type="number"
+            name="people-num"
+            class="people-num-input"
+            id="people-num"
+            min="1"
+            placeholder="1"
+          />
+          <button class="calculate-btn">Calculate</button>
         </div>
-        <!-- <button class="calculate-btn">Calculate</button> -->
         <div class="right">
           <div class="tip-amount">
             <div>
@@ -55,7 +63,7 @@
               <p>/ person</p>
             </div>
             <div>
-              <span class="tip-amount-value">0.00</span>
+              <p>$<span class="tip-amount-value">0.00</span></p>
             </div>
           </div>
           <div class="total-amount">
@@ -64,7 +72,7 @@
               <p>/ person</p>
             </div>
             <div>
-              <span class="total-amount-value">0.00</span>
+              <p>$<span class="total-amount-value">0.00</span></p>
             </div>
           </div>
           <button class="reset-btn">Reset</button>
